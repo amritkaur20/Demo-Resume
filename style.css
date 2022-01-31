@@ -1,0 +1,147 @@
+*  {
+    font-family: 'Roboto', sans-serif;
+}
+.section{
+    display: block;
+}
+.main-content{
+    min-height: 1000px;
+    width: 80%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    grid-column: 300px;
+    background-color: grey;
+    
+}
+.profile-details{
+    margin: 10px;
+}
+ .profile-image{
+    width: 60%;
+    border: 5px white solid;
+    border-radius: 30%;
+    margin: auto;
+    display: block;
+}   
+.name{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    word-spacing: 0.02px;
+    text-transform: uppercase;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    word-spacing: 0.02px;
+    color: burlywood;
+    padding-bottom: 10px; 
+    border-bottom: 1px solid black ;
+}
+
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 5px;
+    color: black;
+   
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.4rem;
+    margin:1rem;
+}
+.social-media i{
+    color: burlywood;
+    padding: 1rem;
+}
+
+.personal-details{
+    list-style: none;
+}
+.personal-details li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.personal-details li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: burlywood;
+}
+.personal-details li span{
+    color: black;
+    font-weight: 300;
+
+}
+.social-media li .icon{
+    color: burlywood;
+}
+.skill-title{
+    font: size 0.75em;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+.skill-progress{
+    
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+}
+.right-section{
+    grid-column: 700px;
+    background-color: rgb(238, 227, 206);
+}
+.right-main-content{
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.education-content{
+    margin-right: 2rem;
+    padding-right: 0.6rem;
+}
+.education-content .para{
+    margin-right: 1rem;
+}
+.experience-content .para{
+    margin-right: 2.5rem;
+}
+
+
+
+@media screen and (max-width: 674px){
+.main-content {
+    display: block;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
